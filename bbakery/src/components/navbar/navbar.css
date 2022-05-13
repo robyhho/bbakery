@@ -1,0 +1,19 @@
+.navbar {
+  height: 50px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu,
+.bag {
+  padding: 10px;
+}
