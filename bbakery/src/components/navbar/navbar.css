@@ -3,6 +3,9 @@
   background-color: #d1d6ca;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navContainer {

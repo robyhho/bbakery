@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar></Navbar>
-      {/* <div className="top-container">
+      <div className="top-container">
         <h1>Welcome to Betty's Bakery</h1>
         <section className="btnSection">
           <button className="btn">Shop Now</button>
@@ -17,7 +17,7 @@ const Home = () => {
             className="downarrow"
           ></FontAwesomeIcon>
         </section>
-      </div> */}
+      </div>
       <Footer></Footer>
     </>
   );
