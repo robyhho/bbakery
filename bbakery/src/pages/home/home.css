@@ -8,15 +8,7 @@
   background-color: lightblue;
 }
 
-h1 {
-  color: #6d6a75;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-  padding-top: 5em;
-}
-
-.btnSection {
+.homeBtnSection {
   display: flex;
   flex-direction: column;
   color: white;
@@ -24,7 +16,7 @@ h1 {
   padding-bottom: 1em;
 }
 
-.btn {
+.homeBtn {
   padding: 1rem 2rem;
   font-size: 20px;
   background-color: #d1d6ca;
@@ -34,9 +26,10 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.btn:hover {
+.homeBtn:hover {
   transform: scale(1.1);
   transition: 500ms linear;
+  cursor: pointer;
 }
 
 .downarrow {

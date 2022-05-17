@@ -12,8 +12,8 @@ const Home = () => {
       <Navbar></Navbar>
       <div className="top-container">
         <h1>Welcome to Betty's Bakery</h1>
-        <section className="btnSection">
-          <button className="btn">Shop Now</button>
+        <section className="homeBtnSection">
+          <button className="homeBtn">Shop Now</button>
           <FontAwesomeIcon
             icon={faChevronDown}
             className="downarrow"

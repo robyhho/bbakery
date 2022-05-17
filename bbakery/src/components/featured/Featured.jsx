@@ -1,11 +1,11 @@
 import "./featured.css";
-import Product from "../product/Product";
+import FeaturedProduct from "../featuredProduct/FeaturedProduct";
 import { featuredProducts } from "../../data";
 const Featured = () => {
   return (
     <div className="productContainer">
       {featuredProducts.map((item) => (
-        <Product item={item} key={item.id}></Product>
+        <FeaturedProduct item={item} key={item.id}></FeaturedProduct>
       ))}
     </div>
   );

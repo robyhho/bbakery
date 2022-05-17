@@ -5,7 +5,8 @@ footer {
   align-items: center;
   text-align: center;
   background-color: #d1d6ca;
-  height: calc(90vh - 50px);
+  height: 100%;
+  padding: 2em;
 }
 
 /* Heading styles */
@@ -20,7 +21,7 @@ footer > section > ul {
   color: white;
 }
 
-ul > li {
+footer ul > li {
   list-style-type: none;
   padding-bottom: 1em;
 }

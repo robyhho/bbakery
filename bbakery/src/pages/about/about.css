@@ -1,0 +1,32 @@
+.aboutContainer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #e6ebe0;
+}
+
+.square {
+  height: 300px;
+  width: 80vw;
+  background-color: lightgray;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.aboutTitle {
+  padding: 0.5em;
+}
+
+.aboutPara {
+  font-size: 12px;
+  color: #6d6a75;
+  padding: 1em 1em;
+  line-height: 1.6em;
+}
+
+.aboutPara:last-child {
+  padding-bottom: 2em;
+}

@@ -22,6 +22,12 @@
   color: #6d6a75;
 }
 
+.menu:hover,
+.bag:hover,
+.logo:hover {
+  cursor: pointer;
+}
+
 .menu,
 .bag {
   padding: 10px 30px;

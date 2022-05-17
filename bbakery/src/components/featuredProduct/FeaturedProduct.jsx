@@ -1,6 +1,6 @@
-import "./product.css";
+import "./featuredProduct.css";
 
-const Product = ({ item }) => {
+const FeaturedProduct = ({ item }) => {
   const handleClick = () => {
     console.log(item.id);
   };
@@ -16,4 +16,4 @@ const Product = ({ item }) => {
   );
 };
 
-export default Product;
+export default FeaturedProduct;
