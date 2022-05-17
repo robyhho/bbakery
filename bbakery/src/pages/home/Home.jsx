@@ -1,6 +1,8 @@
 import "./home.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import Goal from "./Goal";
+import LandingProduct from "./LandingProduct";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,6 +20,8 @@ const Home = () => {
           ></FontAwesomeIcon>
         </section>
       </div>
+      <Goal></Goal>
+      <LandingProduct></LandingProduct>
       <Footer></Footer>
     </>
   );

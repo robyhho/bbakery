@@ -1,0 +1,10 @@
+.productContainer {
+  padding: 3em;
+  height: 100%;
+  background-color: #e6ebe0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}

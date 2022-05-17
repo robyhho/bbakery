@@ -1,0 +1,16 @@
+.dot {
+  height: 250px;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.productTitle {
+  color: #6d6a75;
+  padding: 0.5em 0 0.2em 0;
+}
+
+.findSpan {
+  color: #97969a;
+}

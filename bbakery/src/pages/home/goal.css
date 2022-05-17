@@ -1,0 +1,30 @@
+body {
+  width: 100vw;
+  background-color: lightblue;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin: 1em auto 0em auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+h3,
+p {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 1em;
+  color: #6d6a75;
+}
+
+.para {
+  font-weight: 200;
+  padding-bottom: 1em;
+  color: #6d6a75;
+}
