@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: lightblue;
+  background-color: var(--light-blue);
 }
 
 .homeBtnSection {
@@ -19,7 +19,7 @@
 .homeBtn {
   padding: 1rem 2rem;
   font-size: 20px;
-  background-color: #d1d6ca;
+  background-color: var(--dark-green);
   border: none;
   color: #3f3f3f;
   border-radius: 5px;
@@ -27,8 +27,9 @@
 }
 
 .homeBtn:hover {
-  transform: scale(1.1);
-  transition: 500ms linear;
+  transform: scale(1.05);
+  transition: transform 250ms linear;
+  box-shadow: 0 0 10px var(--accent-pink);
   cursor: pointer;
 }
 

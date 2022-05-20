@@ -1,3 +1,11 @@
+:root {
+  --dark-green: #d1d6ca;
+  --main-font-gray: #6d6a75;
+  --light-green: #e6ebe0;
+  --light-blue: #acc5d3;
+  --accent-pink: #e5989b;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
 
 *,
@@ -10,7 +18,7 @@
 }
 
 h1 {
-  color: #6d6a75;
+  color: var(--main-font-gray);
   font-size: 32px;
   font-weight: 300;
   text-align: center;
