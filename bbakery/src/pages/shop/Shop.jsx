@@ -10,6 +10,7 @@ const Shop = () => {
       <Navbar></Navbar>
       <div className="shopContainer">
         <h1 className="shopTitle">Menu</h1>
+        <h2 className="shopSubtotal">Subtotal: £10</h2>
         <div className="shopItemsContainer">
           {products.map((item) => (
             <ShopItem></ShopItem>

@@ -9,6 +9,12 @@
   width: 100vw;
 }
 
+.shopSubtotal {
+  color: var(--main-font-gray);
+  font-weight: 300;
+  padding-top: 0.5em;
+}
+
 .shopItemsContainer {
   padding-top: 50px;
   display: grid;
@@ -21,7 +27,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding: 0.5em;
+  padding: 0.5em 1em 1em 1em;
   margin-top: 1em;
 }
 

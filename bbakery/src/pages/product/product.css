@@ -1,0 +1,44 @@
+/* X button styles */
+.xBtn {
+  position: absolute;
+  top: 60px;
+  right: 5%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.xBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Product Styles */
+.productContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  gap: 1.5em;
+}
+
+.productImage {
+  width: 80%;
+  margin: 1em;
+  padding-top: 1em;
+  margin-bottom: 0em;
+  border-radius: 5px;
+}
+
+.productTitle {
+  font-size: 1.5em;
+  align-items: flex-start;
+}
+
+.productText {
+  text-align: left;
+  font-size: 0.8em;
+  padding: 0em;
+  color: var(--main-font-gray);
+}
