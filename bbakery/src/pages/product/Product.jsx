@@ -2,11 +2,12 @@ import "./product.css";
 import Image from "../../images/bb-eggtarts.jpeg";
 import Navbar from "../../components/navbar/Navbar";
 import ProductDetails from "../../components/productDetails/ProductDetails";
+
 const Product = () => {
   return (
     <div className="productContainer">
       <Navbar></Navbar>
-      <span className="xBtn">X</span>
+
       <img src={Image} alt="" className="productImage" />
       <h1 className="productTitle">Hong Kong Egg Tart</h1>
       <p className="productText">

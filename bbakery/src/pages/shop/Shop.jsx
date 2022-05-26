@@ -4,6 +4,14 @@ import ShopItem from "../../components/shopItem/ShopItem";
 import Footer from "../../components/footer/Footer";
 import { products } from "../../data";
 
+/* TODO:
+
+Add useState / effect to store amount of each item / Create basket.
+
+Add button function
+Add button update text / usestate?
+*/
+
 const Shop = () => {
   return (
     <>
