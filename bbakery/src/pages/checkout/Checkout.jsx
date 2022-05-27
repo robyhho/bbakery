@@ -1,22 +1,15 @@
 import "./checkout.css";
 import Navbar from "../../components/navbar/Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
+import BasketModal from "../../components/basketModal/BasketModal";
 
 const Checkout = () => {
   return (
     <>
       <Navbar></Navbar>
       <div className="checkoutContainer">
-        <section className="checkoutBasketModal">
-          <div className="basketModalTop">
-            <FontAwesomeIcon
-              className="arrowLeft"
-              icon={faArrowLeft}
-            ></FontAwesomeIcon>
-            <h1 className="basketModalTitle">Basket Contents</h1>
-          </div>
-        </section>
+        <BasketModal></BasketModal>
+
         <section className="checkoutPromotionModal">
           <p>promotion</p>
         </section>

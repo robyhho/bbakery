@@ -12,35 +12,9 @@
 .checkoutPromotionModal,
 .checkoutSummaryModal,
 .checkoutButtonModal {
-  width: 90%;
+  width: 90vw;
   background-color: white;
   border-radius: 5px;
   padding: 1em;
   color: var(--main-font-gray);
-}
-
-/* Basket Modal Styles  */
-
-.checkoutBasketModal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.basketModalTop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.basketModalTitle {
-  padding: 0;
-}
-
-.arrowLeft {
-  border: 1px solid var(--main-font-gray);
-  padding: 5px;
-  border-radius: 5px;
 }
