@@ -45,14 +45,14 @@ footer section ul li:hover {
   padding-top: 2em;
 }
 
-.icon-container ul {
+.iconContainer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.brand-icon {
+.brandIcon {
   color: white;
   height: 30px;
   padding: 0.5em 1em;

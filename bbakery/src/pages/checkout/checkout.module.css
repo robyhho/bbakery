@@ -1,37 +1,33 @@
-.shopContainer {
-  background-color: var(--light-blue);
+.checkoutContainer {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
-  padding-top: 0px;
-  width: 100vw;
-}
-
-.shopSubtotal {
-  color: var(--main-font-gray);
-  font-weight: 300;
-  padding-top: 0.5em;
-}
-
-.shopItemsContainer {
-  padding-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  background-color: var(--light-blue);
   gap: 1em;
 }
 
-.viewBtnContainer {
+.checkoutBasketModal,
+.checkoutPromotionModal,
+.checkoutSummaryModal {
+  width: 90vw;
   background-color: white;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  padding: 0.5em 1em 1em 1em;
-  margin-top: 1em;
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--main-font-gray);
 }
 
-.viewBtn {
+.checkoutButtonModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100vw;
+  padding: 0.8em 0.5em;
+}
+
+.button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,9 +39,11 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
   color: var(--main-font-gray);
   font-size: 1.2em;
+  font-weight: 300;
+  text-indent: 0.2em;
 }
 
-.viewBtn:hover {
+.button:hover {
   transform: scale(1.01);
   transition: transform 250ms linear;
   box-shadow: 0 0 10px var(--accent-pink);

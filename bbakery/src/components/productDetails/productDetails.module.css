@@ -1,7 +1,26 @@
+/* X btn styles */
+.xBtn {
+  position: absolute;
+  top: 55px;
+  left: 1%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4px 9px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.xBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Product container styles */
+
 .productDetailsContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .productDetailsTitleContainer {
@@ -15,7 +34,6 @@
 }
 
 /* Product Detail Title Styles */
-
 .productDetailsTitleContainer h2 {
   color: var(--main-font-gray);
   opacity: 0.5;

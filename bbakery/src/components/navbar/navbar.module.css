@@ -1,0 +1,89 @@
+.navbar {
+  height: 50px;
+  background-color: var(--dark-green);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu,
+.bag,
+.logo {
+  color: #6d6a75;
+}
+
+.menu:hover,
+.bag:hover,
+.logo:hover {
+  cursor: pointer;
+}
+
+.menu,
+.bag {
+  padding: 10px 30px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* Drop down menu styles */
+
+.navDrop {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100vw;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 0.5em;
+  padding-left: 0.3em;
+}
+
+.link {
+  color: var(--main-font-gray);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+/* Social media container styles */
+.iconContainer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brandIcon {
+  color: white;
+  height: 28px;
+  padding: 0.5em 1em;
+}
+
+.social h2 {
+  font-size: 1em;
+  color: var(--main-font-gray);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

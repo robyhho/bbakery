@@ -1,0 +1,32 @@
+/* Basket Modal Styles  */
+.checkoutBasketModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.basketModalTop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--main-font-gray);
+  padding-bottom: 1em;
+}
+
+.arrowLeft {
+  border: 1px solid var(--main-font-gray);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.basketModalTitle {
+  padding: 0.5em 1em;
+}

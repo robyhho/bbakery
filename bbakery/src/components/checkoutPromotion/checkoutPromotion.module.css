@@ -1,0 +1,36 @@
+.promotionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  padding: 0.1em 0.5em 0.4em 0.5em;
+  font-size: 1.8em;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  font-size: 1em;
+  padding: 0.3em;
+  width: 15em;
+  border: 1px solid var(--main-font-gray);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.button {
+  background-color: var(--dark-green);
+  border: none;
+  font-size: 1em;
+  padding: 0.4em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.44) 0px 2px 4px;
+}

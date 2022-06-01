@@ -1,0 +1,30 @@
+/* Summary Modal styles */
+
+.title {
+  padding: 0.2em;
+}
+
+hr {
+  margin-bottom: 1em;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+}
+
+.text,
+.checkoutText {
+  font-weight: 300;
+}
+
+.text {
+  font-size: 1.5em;
+}
+
+.checkoutText {
+  font-size: 1em;
+}

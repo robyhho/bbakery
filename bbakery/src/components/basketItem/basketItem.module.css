@@ -1,30 +1,5 @@
-/* Basket Modal Styles  */
-.checkoutBasketModal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.basketModalTop {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid var(--main-font-gray);
-  padding-bottom: 1em;
-}
-
 .basketModalTitle {
   padding: 0;
-}
-
-.arrowLeft {
-  border: 1px solid var(--main-font-gray);
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .basketModalMain {

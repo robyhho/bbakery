@@ -1,4 +1,4 @@
-import "./productDetails.css";
+import styles from "./productDetails.module.css";
 import { products } from "../../data";
 import { useState } from "react";
 /* TODO: Change so different products reflected in details
@@ -10,57 +10,59 @@ Add functions to the buttons
 const ProductDetails = () => {
   const [showNutrition, setShowNutrition] = useState(true);
   return (
-    <section className="productDetailsContainer">
-      {showNutrition ? <NutritionInfo /> : <DietaryInfo />}
-    </section>
+    <>
+      <section className={styles.productDetailsContainer}>
+        {showNutrition ? <NutritionInfo /> : <DietaryInfo />}
+      </section>
+    </>
   );
 };
 
 const NutritionInfo = () => {
   return (
     <>
-      <div className="productDetailsTitleContainer">
+      <div className={styles.productDetailsTitleContainer}>
         <h2>Dietary Info</h2>
-        <h2 className="pdActive">Nutrition</h2>
+        <h2 className={styles.pdActive}>Nutrition</h2>
       </div>
 
-      <section className="nutritionContainer">
-        <div className="nutritonLeft">
-          <p className="pdDetailText">
-            Energy (kcal) <span className="pdDetailSpan">250kcal</span>
+      <section className={styles.nutritionContainer}>
+        <div className={styles.nutritonLeft}>
+          <p className={styles.pdDetailText}>
+            Energy (kcal) <span className={styles.pdDetailSpan}>250kcal</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            Fats <span className="pdDetailSpan">1.0g</span>
+          <p className={styles.pdDetailText}>
+            Fats <span className={styles.pdDetailSpan}>1.0g</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            of which saturates <span className="pdDetailSpan">0.2g</span>
+          <p className={styles.pdDetailText}>
+            of which saturates <span className={styles.pdDetailSpan}>0.2g</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            Proteins <span className="pdDetailSpan">11.2g</span>
+          <p className={styles.pdDetailText}>
+            Proteins <span className={styles.pdDetailSpan}>11.2g</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            Salt <span className="pdDetailSpan">1.5g</span>
+          <p className={styles.pdDetailText}>
+            Salt <span className={styles.pdDetailSpan}>1.5g</span>
           </p>
         </div>
-        <div className="nutritionRight">
-          <p className="pdDetailText">
-            Energy (kJ) <span className="pdDetailSpan">1100kj</span>
+        <div className={styles.nutritionRight}>
+          <p className={styles.pdDetailText}>
+            Energy (kJ) <span className={styles.pdDetailSpan}>1100kj</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            Carbs <span className="pdDetailSpan">56.3g</span>
+          <p className={styles.pdDetailText}>
+            Carbs <span className={styles.pdDetailSpan}>56.3g</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            of which sugars <span className="pdDetailSpan">8g</span>
+          <p className={styles.pdDetailText}>
+            of which sugars <span className={styles.pdDetailSpan}>8g</span>
           </p>
           <hr />
-          <p className="pdDetailText">
-            Fibres <span className="pdDetailSpan">2g</span>
+          <p className={styles.pdDetailText}>
+            Fibres <span className={styles.pdDetailSpan}>2g</span>
           </p>
         </div>
       </section>

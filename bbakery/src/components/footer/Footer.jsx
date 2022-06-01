@@ -1,4 +1,4 @@
-import "./footer.css";
+import styles from "./footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -9,14 +9,14 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <section className="contact">
+      <section className={styles.contact}>
         <h2>Contact</h2>
         <ul>
           <li>Contact Us</li>
           <li>FAQ</li>
         </ul>
       </section>
-      <section className="shop">
+      <section className={styles.shop}>
         <h2>Shop</h2>
         <ul>
           <li>Catering</li>
@@ -25,32 +25,32 @@ const Footer = () => {
           <li>Privacy Policy</li>
         </ul>
       </section>
-      <section className="social">
+      <section className={styles.social}>
         <h2>Social</h2>
-        <div className="icon-container">
+        <div className={styles.iconContainer}>
           <ul>
             <li>
               <FontAwesomeIcon
                 icon={faInstagram}
-                className="brand-icon"
+                className={styles.brandIcon}
               ></FontAwesomeIcon>
             </li>
-            <li className="twitter">
+            <li className={styles.twitter}>
               <FontAwesomeIcon
                 icon={faTwitter}
-                className="brand-icon"
+                className={styles.brandIcon}
               ></FontAwesomeIcon>
             </li>
-            <li className="facebook">
+            <li className={styles.facebook}>
               <FontAwesomeIcon
                 icon={faFacebook}
-                className="brand-icon"
+                className={styles.brandIcon}
               ></FontAwesomeIcon>
             </li>
           </ul>
         </div>
       </section>
-      <section className="newsletter">
+      <section className={styles.newsletter}>
         <h2>Newsletter</h2>
         <input type="text" placeholder="Email:" />
         <button>Subscribe</button>

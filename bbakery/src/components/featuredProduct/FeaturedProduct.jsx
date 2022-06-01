@@ -1,4 +1,4 @@
-import "./featuredProduct.css";
+import styles from "./featuredProduct.module.css";
 
 const FeaturedProduct = ({ item }) => {
   const handleClick = () => {
@@ -7,9 +7,9 @@ const FeaturedProduct = ({ item }) => {
 
   return (
     <div>
-      <span className="dot"></span>
-      <h3 className="productTitle">{item.name}</h3>
-      <p className="findSpan" onClick={handleClick}>
+      <span className={styles.dot}></span>
+      <h3 className={styles.productTitle}>{item.name}</h3>
+      <p className={styles.findSpan} onClick={handleClick}>
         Find out more
       </p>
     </div>
