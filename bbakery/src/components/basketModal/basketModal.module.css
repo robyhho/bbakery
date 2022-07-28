@@ -8,6 +8,7 @@
   padding: 1em;
   border-radius: 5px;
   margin-top: 1em;
+  max-width: 90%;
 }
 
 .basketModalTop {
@@ -28,5 +29,24 @@
 }
 
 .basketModalTitle {
-  padding: 0.5em 1em;
+  padding: 0.1em 0.5em;
+}
+
+.emptyText {
+  padding-top: 1em;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--main-font-gray);
+}
+
+.homeBtn {
+  margin-top: 1em;
+  padding: 0.2em 0.4em;
+  font-size: 20px;
+  background-color: var(--dark-green);
+  border: none;
+  color: #3f3f3f;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-decoration: none;
 }

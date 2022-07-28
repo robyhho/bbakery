@@ -1,13 +1,18 @@
 import styles from "./featured.module.css";
 import FeaturedProduct from "../featuredProduct/FeaturedProduct";
-import { featuredProducts } from "../../data";
+import useFetch from "../../hooks/useFetch";
 
 const Featured = () => {
+  const { data, loading, error } = useFetch("/products/find/?featured=true");
+
   return (
     <div className={styles.productContainer}>
-      {featuredProducts.map((item) => (
-        <FeaturedProduct item={item} key={item.id}></FeaturedProduct>
-      ))}
+      {loading
+        ? "loading"
+        : data &&
+          data.map((item) => (
+            <FeaturedProduct item={item} key={item._id}></FeaturedProduct>
+          ))}
     </div>
   );
 };

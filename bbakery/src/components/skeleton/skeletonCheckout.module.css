@@ -1,0 +1,15 @@
+.skeletonContainer {
+  height: 200px;
+  background-color: white;
+  width: 85vw;
+  margin: 1em;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeletonContainer:last-child {
+  height: 110px;
+}

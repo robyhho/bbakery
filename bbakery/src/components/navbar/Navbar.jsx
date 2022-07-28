@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBagShopping } from "@fortawesome/free-solid-svg-icons";
@@ -8,16 +8,24 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { useShoppingCart } from "../../contexts/ShoppingCartContext";
 
 const Navbar = () => {
   //UseState
   const [showMenu, setShowMenu] = useState(false);
-  const [cart, setCart] = useState([]);
+  const { cartQuantity } = useShoppingCart();
+
+  let navigate = useNavigate();
 
   //Function
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const routeChange = (path) => {
+    navigate(path);
+  };
+
   return (
     <nav>
       <div className={styles.navbar}>
@@ -29,8 +37,21 @@ const Navbar = () => {
               toggleMenu();
             }}
           />
-          <span className={styles.logo}>BB.</span>
-          <FontAwesomeIcon icon={faBagShopping} className={styles.bag} />
+          <NavLink to="/" className={styles.logo}>
+            BB.
+          </NavLink>
+          <div className={styles.bagContainer}>
+            <FontAwesomeIcon
+              icon={faBagShopping}
+              className={styles.bag}
+              onClick={() => {
+                routeChange("/checkout");
+              }}
+            />
+            {cartQuantity > 0 && (
+              <span className={styles.itemNum}>{cartQuantity}</span>
+            )}
+          </div>
         </div>
         {showMenu && <NavDrop></NavDrop>}
       </div>
@@ -41,14 +62,11 @@ const Navbar = () => {
 const NavDrop = () => {
   return (
     <div className={styles.navDrop}>
-      <NavLink to="/" className={styles.link}>
+      <NavLink to="/aboutus" className={styles.link}>
         About Us
       </NavLink>
-      <NavLink to="/" className={styles.link}>
+      <NavLink to="/shop" className={styles.link}>
         Shop
-      </NavLink>
-      <NavLink to="/" className={styles.link}>
-        Our Fav Products
       </NavLink>
       <section className={styles.social}>
         <h2>Find us on: </h2>

@@ -1,0 +1,46 @@
+/* Skeleton loading styles*/
+
+.shopItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.shopItemSquare {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.shopItemTitle,
+.shopItemPrice {
+  color: var(--main-font-gray);
+  font-size: 0.75em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.shopItemTitle {
+  padding-bottom: 0.5em;
+}
+
+.shopItemPrice {
+  padding-bottom: 1em;
+}
+
+.shopBottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 150px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}

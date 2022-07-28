@@ -2,21 +2,31 @@ import styles from "./basketItem.module.css";
 import Image from "../../images/bb_pineapplebun.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
+import useFetch from "../../hooks/useFetch";
+import { useShoppingCart } from "../../contexts/ShoppingCartContext";
 
-/* 
-TODO:
-Change Image so it uses prop to change image.
-Add functionality and useState to int and buttons.
-Update price and name for each item depending on the item.
+const BasketItem = ({ id }) => {
+  const { data, loading, error } = useFetch(`/products/find/${id}`);
+  const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity } =
+    useShoppingCart();
 
-*/
+  const updatingQuantity = getItemQuantity(id);
 
-const BasketItem = () => {
   return (
     <div className={styles.basketModalMain}>
       <div className={styles.basketMainTop}>
-        <h2>Pineapple Bun</h2>
-        <h2>£3:15</h2>
+        <div className={styles.titleContainer}>
+          <h2 className={styles.itemName}>{data.name}</h2>
+          {updatingQuantity > 1 && (
+            <span
+              className={styles.mutedQuantity}
+            >{`x${updatingQuantity}`}</span>
+          )}
+        </div>
+        <h2 className={styles.priceTag}>{`£${
+          data.price * updatingQuantity
+        }`}</h2>
       </div>
       <div className={styles.basketMainContent}>
         <img
@@ -25,14 +35,30 @@ const BasketItem = () => {
           className={styles.checkoutBasketImage}
         />
         <div className={styles.basketBtnContainer}>
-          <FontAwesomeIcon
-            icon={faMinus}
-            className={styles.minusIcon}
-          ></FontAwesomeIcon>
-          <span className={styles.basketMainInt}>0</span>
+          {updatingQuantity === 1 ? (
+            <FontAwesomeIcon
+              icon={faTrashCan}
+              className={styles.trashCan}
+              onClick={() => {
+                decreaseCartQuantity(id);
+              }}
+            ></FontAwesomeIcon>
+          ) : (
+            <FontAwesomeIcon
+              icon={faMinus}
+              className={styles.minusIcon}
+              onClick={() => {
+                decreaseCartQuantity(id);
+              }}
+            ></FontAwesomeIcon>
+          )}
+          <span className={styles.basketMainInt}>{updatingQuantity}</span>
           <FontAwesomeIcon
             icon={faPlus}
             className={styles.plusIcon}
+            onClick={() => {
+              increaseCartQuantity(id);
+            }}
           ></FontAwesomeIcon>
         </div>
       </div>

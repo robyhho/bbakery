@@ -27,6 +27,27 @@
   padding-bottom: 1.5em;
 }
 
+.titleContainer {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemName {
+  font-size: 1.1em;
+}
+
+.mutedQuantity {
+  color: var(--main-font-gray);
+  font-weight: lighter;
+}
+
+.priceTag {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
 .checkoutBasketImage {
   width: 100px;
   border-radius: 5px;
@@ -48,6 +69,7 @@
   font-size: 2em;
 }
 
+.trashCan,
 .minusIcon,
 .plusIcon {
   font-size: 1.2em;
@@ -60,7 +82,9 @@
 /* Button Hover styles */
 .arrowLeft:hover,
 .minusIcon:hover,
-.plusIcon:hover {
+.plusIcon:hover,
+.trashCan:hover {
   cursor: pointer;
   transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.04);
 }

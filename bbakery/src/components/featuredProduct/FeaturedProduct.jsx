@@ -1,8 +1,12 @@
 import styles from "./featuredProduct.module.css";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedProduct = ({ item }) => {
+  let navigate = useNavigate();
+
   const handleClick = () => {
-    console.log(item.id);
+    let path = `/product/${item._id}`;
+    navigate(path);
   };
 
   return (

@@ -1,13 +1,23 @@
 import styles from "./summaryModal.module.css";
+import useFetch from "../../hooks/useFetch";
+import { useShoppingCart } from "../../contexts/ShoppingCartContext";
 
 const SummaryModal = () => {
+  const { data, loading, error } = useFetch(`/products/find/`);
+  const { cartItems } = useShoppingCart();
+
   return (
     <section className={styles.summaryContainer}>
       <h1 className={styles.title}>Summary</h1>
       <hr />
       <div className={styles.subContainer}>
         <h2 className={styles.text}>Subtotal</h2>
-        <h2 className={styles.text}>£10.85</h2>
+        <h2 className={styles.text}>
+          {`£${cartItems.reduce((total, cartItem) => {
+            const item = data.find((i) => i._id === cartItem.id);
+            return total + (item?.price || 0) * cartItem.quantity;
+          }, 0)}`}
+        </h2>
       </div>
       <div className={styles.subContainer}>
         <h2 className={styles.text}>Delivery</h2>

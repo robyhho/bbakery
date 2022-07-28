@@ -5,14 +5,22 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  let navigate = useNavigate();
   return (
     <footer>
       <section className={styles.contact}>
         <h2>Contact</h2>
         <ul>
-          <li>Contact Us</li>
+          <li
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Contact Us
+          </li>
           <li>FAQ</li>
         </ul>
       </section>
