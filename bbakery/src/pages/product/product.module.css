@@ -10,10 +10,10 @@
 }
 
 .productImage {
-  width: 80%;
   margin-bottom: 0em;
   border-radius: 5px;
-  max-height: 40%;
+  max-height: 45%;
+  max-width: 90%;
 }
 
 .productTitle {

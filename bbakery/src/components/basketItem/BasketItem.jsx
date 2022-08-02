@@ -14,56 +14,60 @@ const BasketItem = ({ id }) => {
   const updatingQuantity = getItemQuantity(id);
 
   return (
-    <div className={styles.basketModalMain}>
-      <div className={styles.basketMainTop}>
-        <div className={styles.titleContainer}>
-          <h2 className={styles.itemName}>{data.name}</h2>
-          {updatingQuantity > 1 && (
-            <span
-              className={styles.mutedQuantity}
-            >{`x${updatingQuantity}`}</span>
-          )}
+    <>
+      <div className={styles.basketModalMain}>
+        <div className={styles.basketMainTop}>
+          <div className={styles.titleContainer}>
+            <h2 className={styles.itemName}>{data.name}</h2>
+            {updatingQuantity > 1 && (
+              <span
+                className={styles.mutedQuantity}
+              >{`x${updatingQuantity}`}</span>
+            )}
+          </div>
+          <h2 className={styles.priceTag}>{`£${
+            data.price * updatingQuantity
+          }`}</h2>
         </div>
-        <h2 className={styles.priceTag}>{`£${
-          data.price * updatingQuantity
-        }`}</h2>
-      </div>
-      <div className={styles.basketMainContent}>
-        <img
-          src={Image}
-          alt="Pineapple Bun on a plate"
-          className={styles.checkoutBasketImage}
-        />
-        <div className={styles.basketBtnContainer}>
-          {updatingQuantity === 1 ? (
+        <div className={styles.basketMainContent}>
+          {!loading && data.photos !== undefined && (
+            <img
+              src={data.photos[0]}
+              alt={`Image of ${data.name}`}
+              className={styles.checkoutBasketImage}
+            />
+          )}
+          <div className={styles.basketBtnContainer}>
+            {updatingQuantity === 1 ? (
+              <FontAwesomeIcon
+                icon={faTrashCan}
+                className={styles.trashCan}
+                onClick={() => {
+                  decreaseCartQuantity(id);
+                }}
+              ></FontAwesomeIcon>
+            ) : (
+              <FontAwesomeIcon
+                icon={faMinus}
+                className={styles.minusIcon}
+                onClick={() => {
+                  decreaseCartQuantity(id);
+                }}
+              ></FontAwesomeIcon>
+            )}
+            <span className={styles.basketMainInt}>{updatingQuantity}</span>
             <FontAwesomeIcon
-              icon={faTrashCan}
-              className={styles.trashCan}
+              icon={faPlus}
+              className={styles.plusIcon}
               onClick={() => {
-                decreaseCartQuantity(id);
+                increaseCartQuantity(id);
               }}
             ></FontAwesomeIcon>
-          ) : (
-            <FontAwesomeIcon
-              icon={faMinus}
-              className={styles.minusIcon}
-              onClick={() => {
-                decreaseCartQuantity(id);
-              }}
-            ></FontAwesomeIcon>
-          )}
-          <span className={styles.basketMainInt}>{updatingQuantity}</span>
-          <FontAwesomeIcon
-            icon={faPlus}
-            className={styles.plusIcon}
-            onClick={() => {
-              increaseCartQuantity(id);
-            }}
-          ></FontAwesomeIcon>
+          </div>
         </div>
+        <hr />
       </div>
-      <hr />
-    </div>
+    </>
   );
 };
 

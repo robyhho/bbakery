@@ -8,11 +8,9 @@
   background-color: var(--light-green);
 }
 
-.square {
-  height: 300px;
-  width: 80vw;
-  background-color: lightgray;
-  margin: 1em;
+.aboutImage {
+  width: 90vw;
+  max-height: 500px;
   border-radius: 5px;
 }
 

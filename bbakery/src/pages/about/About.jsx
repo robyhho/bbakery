@@ -7,7 +7,11 @@ const About = () => {
     <>
       <Navbar />
       <div className={styles.aboutContainer}>
-        <div className={styles.square}></div>
+        <img
+          src="../../images/bbPhotos/aboutImage.jpg"
+          alt="Woman preparing pineapple buns"
+          className={styles.aboutImage}
+        />
         <h1 className={styles.aboutTitle}>About Us</h1>
         <p className={styles.aboutPara}>
           Nice to meet you! I’m Betty, the cook behind Betty’s bakery. Being

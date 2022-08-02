@@ -5,11 +5,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--light-blue);
+  background-image: url(../../images/homeMobile.jpg);
+  background-size: cover;
+  background-position: 50%;
 }
 
 .homeTitle {
   width: 90%;
+  color: #f8f8f8;
 }
 
 .homeBtnSection {

@@ -6,7 +6,7 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import { useShoppingCart } from "../../contexts/ShoppingCartContext";
 
-const ShopItem = ({ _id, name, price }) => {
+const ShopItem = ({ _id, name, price, photos }) => {
   const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity } =
     useShoppingCart();
 
@@ -17,7 +17,8 @@ const ShopItem = ({ _id, name, price }) => {
         className={styles.shopItemContainer}
         onClick={quantity === 0 ? () => increaseCartQuantity(_id) : undefined}
       >
-        <span className={styles.shopItemSquare}></span>
+        {<img src={photos} alt="" className={styles.shopItemSquare} />}
+
         <div className={styles.shopBottomContainer}>
           <h2 className={styles.shopItemTitle}>{name}</h2>
           <h2 className={styles.shopItemPrice}>{`£${price} each`}</h2>
