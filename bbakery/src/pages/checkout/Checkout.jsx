@@ -24,7 +24,9 @@ const Checkout = () => {
       ) : (
         <>
           <div className={styles.checkoutContainer}>
-            <BasketModal></BasketModal>
+            <section className={styles.checkoutBasketModal}>
+              <BasketModal></BasketModal>
+            </section>
 
             <section className={styles.checkoutSummaryModal}>
               <SummaryModal></SummaryModal>
@@ -32,8 +34,8 @@ const Checkout = () => {
             <section className={styles.checkoutPromotionModal}>
               <CheckoutPromotion></CheckoutPromotion>
             </section>
-            <section className={styles.checkoutButtonModal}>
-              {cartItems.length > 0 ? (
+            {cartItems.length > 0 ? (
+              <section className={styles.checkoutButtonModal}>
                 <>
                   <button
                     className={styles.button}
@@ -48,10 +50,10 @@ const Checkout = () => {
                     </span>
                   </button>
                 </>
-              ) : (
-                <></>
-              )}
-            </section>
+              </section>
+            ) : (
+              <></>
+            )}
           </div>
         </>
       )}

@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: var(--light-blue);
   gap: 1em;
+  height: 100vh;
 }
 
 .checkoutBasketModal,
@@ -18,13 +19,15 @@
   color: var(--main-font-gray);
 }
 
+.checkoutBasketModal {
+  margin-top: 1em;
+}
+
 .checkoutButtonModal {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
   width: 100vw;
-  padding: 0.8em 0.5em;
 }
 
 .button {
@@ -32,10 +35,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 95vw;
+  width: 90vw;
   padding: 0.5em;
   background-color: var(--dark-green);
   border: none;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
   color: var(--main-font-gray);
   font-size: 1.2em;

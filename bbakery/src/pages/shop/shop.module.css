@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding-top: 0px;
   width: 100vw;
 }
@@ -21,10 +20,10 @@
 }
 
 .shopItemsContainer {
-  padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin: 1em;
 }
 
 .viewBtnContainer {
@@ -41,7 +40,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 95vw;
+  width: 90%;
   padding: 0.5em;
   background-color: var(--dark-green);
   border: none;
@@ -55,4 +54,14 @@
   transition: transform 250ms linear;
   box-shadow: 0 0 10px var(--accent-pink);
   cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .shopTitle {
+    font-size: 3em;
+  }
+
+  .shopSubtotal {
+    font-size: 2em;
+  }
 }

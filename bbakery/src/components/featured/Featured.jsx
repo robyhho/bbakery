@@ -11,7 +11,11 @@ const Featured = () => {
         ? "loading"
         : data &&
           data.map((item) => (
-            <FeaturedProduct item={item} key={item._id}></FeaturedProduct>
+            <FeaturedProduct
+              item={item}
+              key={item._id}
+              className={styles.product}
+            ></FeaturedProduct>
           ))}
     </div>
   );

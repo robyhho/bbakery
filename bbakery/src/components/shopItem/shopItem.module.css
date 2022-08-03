@@ -7,12 +7,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 35vw;
 }
 
 .shopItemSquare {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 35vw;
+  /* width: 150px; */
+  width: 100%;
   background-color: white;
   border-radius: 5px;
   border-bottom-left-radius: 0;
@@ -25,17 +27,21 @@
 .shopItemTitle,
 .shopItemPrice {
   color: var(--main-font-gray);
-  font-size: 0.75em;
   text-align: center;
   border-radius: 5px;
 }
 
 .shopItemTitle {
-  padding-bottom: 0.5em;
+  font-size: 4vw;
+  font-weight: 400;
+  padding: 0 0.2em;
+  height: 3em;
 }
 
 .shopItemPrice {
-  padding-bottom: 1em;
+  padding: 0em;
+  font-size: 4vw;
+  height: 2em;
 }
 
 .shopBottomContainer {
@@ -44,7 +50,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: 150px;
+  width: 35vw;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
@@ -52,7 +58,7 @@
 
 .itemNum {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 5vw;
   font-weight: 300;
   color: var(--main-font-gray);
 }
@@ -61,15 +67,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 150px;
+  max-width: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 .shopMinus,
 .shopPlus {
-  padding: 0.2em;
-  margin: 1em;
+  padding: 2vw;
+  margin: 2vw 4vw;
   border-radius: 5px;
   border: 0.7px solid var(--main-font-gray);
   background-color: #f8f8f8;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+
+@media screen and (min-width: 600px) {
 }
