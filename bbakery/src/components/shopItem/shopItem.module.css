@@ -13,7 +13,6 @@
 .shopItemSquare {
   position: relative;
   height: 35vw;
-  /* width: 150px; */
   width: 100%;
   background-color: white;
   border-radius: 5px;
@@ -82,5 +81,47 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) and (max-width: 1099px) {
+  .shopItemSquare {
+    width: 35vw;
+    height: 33vw;
+  }
+  .shopBottomContainer {
+    width: 35vw;
+  }
+
+  .shopItemTitle {
+    font-size: 2.5vw;
+  }
+
+  .shopItemPrice {
+    font-size: 3vw;
+    height: 1.5em;
+  }
+
+  .shopMinus,
+  .shopPlus {
+    margin: 2vw 4vw;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .shopItemSquare,
+  .shopBottomContainer {
+    width: 30vw;
+  }
+
+  .shopItemTitle {
+    font-size: 2.5vw;
+  }
+
+  .shopItemPrice {
+    font-size: 3vw;
+    height: 1.5em;
+  }
+
+  .shopMinus,
+  .shopPlus {
+    margin: 2vw 4vw;
+  }
 }

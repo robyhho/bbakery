@@ -58,10 +58,23 @@
 
 @media only screen and (min-width: 600px) {
   .shopTitle {
-    font-size: 3em;
+    font-size: 6vw;
   }
 
   .shopSubtotal {
-    font-size: 2em;
+    font-size: 4vw;
+  }
+
+  .viewBtn {
+    padding-left: 2em;
+  }
+}
+
+@media screen and (max-height: 680px) {
+  .shopItemsContainer {
+    gap: 1em;
+  }
+  .viewBtnContainer {
+    margin-top: 0;
   }
 }

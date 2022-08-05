@@ -1,5 +1,4 @@
 import styles from "./basketItem.module.css";
-import Image from "../../images/bb_pineapplebun.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";

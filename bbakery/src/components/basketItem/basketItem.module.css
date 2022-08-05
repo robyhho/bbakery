@@ -1,9 +1,5 @@
-.basketModalTitle {
-  padding: 0;
-}
-
 .basketModalMain {
-  width: 80vw;
+  width: 100%;
 }
 
 .basketMainTop {
@@ -34,25 +30,26 @@
   align-items: center;
 }
 
-.itemName {
-  font-size: 1.1em;
+.itemName,
+.priceTag {
+  font-size: 5vw;
 }
 
 .mutedQuantity {
   color: var(--main-font-gray);
   font-weight: lighter;
+  font-size: 3vw;
 }
 
 .priceTag {
   font-weight: 800;
-  font-size: 1.5em;
 }
 
 .checkoutBasketImage {
-  width: 100px;
+  width: 40vw;
+  height: 25vw;
   border-radius: 5px;
   margin-right: 1em;
-  height: 80px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -68,15 +65,15 @@
 }
 
 .basketMainInt {
-  font-size: 2em;
+  font-size: 7vw;
 }
 
 .trashCan,
 .minusIcon,
 .plusIcon {
-  font-size: 1.2em;
+  font-size: 4vw;
   border: 1px solid var(--main-font-gray);
-  padding: 8px;
+  padding: 2vw;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -89,4 +86,22 @@
   cursor: pointer;
   transform: scale(1.05);
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (min-width: 500px) {
+  .itemName,
+  .priceTag {
+    font-size: 4vw;
+  }
+
+  .basketMainInt {
+    font-size: 6vw;
+  }
+
+  .trashCan,
+  .minusIcon,
+  .plusIcon {
+    font-size: 5vw;
+    padding: 1.5vw;
+  }
 }

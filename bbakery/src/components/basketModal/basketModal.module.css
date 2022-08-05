@@ -5,10 +5,10 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
   border-radius: 5px;
   margin-top: 1em;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .basketModalTop {
@@ -16,16 +16,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   border-bottom: 1px solid var(--main-font-gray);
-  padding-bottom: 1em;
-}
 
-.arrowLeft {
-  border: 1px solid var(--main-font-gray);
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-bottom: 1em;
 }
 
 .basketModalTitle {
@@ -49,4 +43,10 @@
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .basketModalTitle {
+    font-size: 7vw;
+  }
 }

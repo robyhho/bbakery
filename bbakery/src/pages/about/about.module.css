@@ -1,10 +1,9 @@
 .aboutContainer {
-  padding-top: 50px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: flex-start;
   background-color: var(--light-green);
 }
 
@@ -27,4 +26,28 @@
 
 .aboutPara:last-child {
   padding-bottom: 2em;
+}
+
+@media screen and (min-width: 550px) {
+  .aboutImage {
+    width: 70vw;
+  }
+
+  .aboutPara {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .aboutContainer {
+    padding-top: 120px;
+    padding-bottom: 5em;
+  }
+
+  .aboutImage {
+    width: 600px;
+  }
+  .aboutPara {
+    width: 650px;
+  }
 }

@@ -36,11 +36,11 @@
 
 .menu,
 .bag {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   text-decoration: none;
 }
@@ -112,4 +112,15 @@
 
 li {
   list-style: none;
+}
+
+@media screen and (min-width: 500px) {
+  .logo {
+    font-size: 40px;
+  }
+
+  .menu,
+  .bag {
+    font-size: 1.8em;
+  }
 }

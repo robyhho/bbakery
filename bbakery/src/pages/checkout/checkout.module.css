@@ -6,7 +6,8 @@
   justify-content: flex-start;
   background-color: var(--light-blue);
   gap: 1em;
-  height: 100vh;
+  padding-bottom: 1em;
+  min-height: 100vh;
 }
 
 .checkoutBasketModal,
@@ -56,4 +57,15 @@
 
 .basketEmpty {
   opacity: 0.7;
+}
+
+@media screen and (min-width: 600px) {
+  .checkoutBasketModal,
+  .checkoutPromotionModal,
+  .checkoutSummaryModal {
+    width: 80vw;
+  }
+  .button {
+    width: 80vw;
+  }
 }
