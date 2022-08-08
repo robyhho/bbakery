@@ -7,6 +7,11 @@
   color: #97969a;
 }
 
+.image:hover,
+.findSpan:hover {
+  cursor: pointer;
+}
+
 .image {
   width: 60vw;
   border-radius: 5px;
@@ -14,15 +19,25 @@
   object-fit: cover;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .productTitle {
-    font-size: 1.7em;
+    font-size: 1.3em;
+    height: 3em;
   }
   .findSpan {
-    font-size: 1.5em;
+    font-size: 1.1em;
+    padding-bottom: 1em;
   }
 
   .image {
-    max-height: 600px;
+    max-height: 30vw;
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image {
+    width: 20vw;
+    height: 500px;
   }
 }

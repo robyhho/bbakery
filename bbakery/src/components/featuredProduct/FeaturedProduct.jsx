@@ -15,6 +15,7 @@ const FeaturedProduct = ({ item }) => {
         src={item.photos[0]}
         alt={`Image of a ${item.name}`}
         className={styles.image}
+        onClick={handleClick}
       />
       <h3 className={styles.productTitle}>{item.name}</h3>
       <p className={styles.findSpan} onClick={handleClick}>

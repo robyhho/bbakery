@@ -32,19 +32,25 @@
     justify-content: center;
     align-items: center;
   }
-  .goalTitle,
-  .goalPara {
-    padding-left: 5vw;
-  }
 
   .goalTitle {
     padding-top: 1em;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .goalPara {
-    font-size: 2em;
-    width: 90%;
+    font-size: 1.2em;
+    width: 70%;
     padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .goalTitle {
+    font-size: 2em;
+  }
+  .goalPara {
+    width: 50vw;
+    font-size: 1.4em;
   }
 }

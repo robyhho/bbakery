@@ -90,3 +90,14 @@ footer section ul li:hover {
   box-shadow: 0 0 10px var(--accent-pink);
   cursor: pointer;
 }
+
+@media screen and (min-width: 750px) {
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .contact {
+    padding: 0;
+  }
+}
