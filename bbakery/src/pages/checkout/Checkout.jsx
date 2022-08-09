@@ -57,36 +57,6 @@ const Checkout = () => {
           </div>
         </>
       )}
-      {/* <>
-        <Navbar></Navbar>
-        <div className={styles.checkoutContainer}>
-          <BasketModal></BasketModal>
-
-          <section className={styles.checkoutSummaryModal}>
-            <SummaryModal></SummaryModal>
-          </section>
-          <section className={styles.checkoutPromotionModal}>
-            <CheckoutPromotion></CheckoutPromotion>
-          </section>
-          <section className={styles.checkoutButtonModal}>
-            {cartItems.length > 0 ? (
-              <>
-                <button className={styles.button}>
-                  <span>Checkout</span>
-                  <span>
-                    {`£${cartItems.reduce((total, cartItem) => {
-                      const item = data.find((i) => i._id === cartItem.id);
-                      return total + (item?.price || 0) * cartItem.quantity;
-                    }, 0)}`}
-                  </span>
-                </button>
-              </>
-            ) : (
-              <></>
-            )}
-          </section>
-        </div>
-      </> */}
     </>
   );
 };

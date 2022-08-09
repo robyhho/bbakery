@@ -50,3 +50,15 @@
     font-size: 7vw;
   }
 }
+
+@media screen and (min-width: 750px) and (max-width: 1119px) {
+  .basketModalTitle {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basketModalTitle {
+    font-size: 2em;
+  }
+}

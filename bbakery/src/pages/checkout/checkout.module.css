@@ -69,3 +69,20 @@
     width: 80vw;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .checkoutContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .checkoutBasketModal {
+    width: 30vw;
+  }
+  .checkoutPromotionModal,
+  .checkoutSummaryModal {
+    width: 20vw;
+  }
+  .checkoutPromotionModal {
+    grid-column-start: 1;
+  }
+}

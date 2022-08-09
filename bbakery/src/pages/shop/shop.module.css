@@ -1,22 +1,21 @@
 .shopContainer {
+  position: relative;
   background-color: var(--light-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 0px;
-  width: 100vw;
+  padding-top: 60px;
 }
 
 .shopTitle {
   font-size: 2em;
-  padding-top: 60px;
+  padding: 0;
 }
 
 .shopSubtotal {
   color: var(--main-font-gray);
   font-weight: 300;
-  padding-top: 0.2em;
 }
 
 .shopItemsContainer {
@@ -56,12 +55,23 @@
   cursor: pointer;
 }
 
+@media screen and (max-height: 680px) {
+  .shopItemsContainer {
+    gap: 1em;
+  }
+  .viewBtnContainer {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .shopTitle {
-    font-size: 6vw;
+    font-size: 2.5em;
+    padding: 0.2em;
   }
 
   .shopSubtotal {
+    padding: 0;
     font-size: 4vw;
   }
 
@@ -70,11 +80,31 @@
   }
 }
 
-@media screen and (max-height: 680px) {
-  .shopItemsContainer {
-    gap: 1em;
+@media only screen and (min-width: 800px) {
+  .shopContainer {
+    height: 90vh;
+    justify-content: flex-start;
   }
+  .shopItemsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3em 0;
+  }
+
+  .shopTitle {
+    font-size: 2.5em;
+    padding: 0.2em;
+  }
+
+  .shopSubtotal {
+    padding: 0;
+    font-size: 4vw;
+  }
+
   .viewBtnContainer {
-    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .viewBtn {
+    padding-left: 2em;
   }
 }

@@ -106,9 +106,19 @@
 }
 
 @media only screen and (min-width: 800px) {
+  .shopItemContainer {
+    width: fit-content;
+  }
+
   .shopItemSquare,
   .shopBottomContainer {
-    width: 30vw;
+    width: 25vw;
+  }
+  .shopItemSquare {
+    height: 30vw;
+  }
+  .shopBottomContainer {
+    min-height: 10vw;
   }
 
   .shopItemTitle {
@@ -116,12 +126,12 @@
   }
 
   .shopItemPrice {
-    font-size: 3vw;
+    font-size: 2.2vw;
     height: 1.5em;
   }
 
   .shopMinus,
   .shopPlus {
-    margin: 2vw 4vw;
+    margin: 1vw 2vw;
   }
 }

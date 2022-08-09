@@ -5,8 +5,8 @@ footer {
   align-items: center;
   text-align: center;
   background-color: var(--dark-green);
-  height: 100%;
   padding: 2em;
+  height: 100%;
 }
 
 /* Heading styles */
@@ -99,5 +99,11 @@ footer section ul li:hover {
   }
   .contact {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  footer {
+    padding: 2em 10em;
   }
 }

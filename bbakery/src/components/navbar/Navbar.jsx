@@ -13,6 +13,7 @@ import { useShoppingCart } from "../../contexts/ShoppingCartContext";
 const Navbar = () => {
   //UseState
   const [showMenu, setShowMenu] = useState(false);
+
   const { cartQuantity } = useShoppingCart();
 
   let navigate = useNavigate();
@@ -30,17 +31,42 @@ const Navbar = () => {
     <nav>
       <div className={styles.navbar}>
         <div className={styles.navContainer}>
-          <FontAwesomeIcon
-            icon={faBars}
-            className={styles.menu}
-            onClick={() => {
-              toggleMenu();
-            }}
-          />
+          <div className={styles.leftSide}>
+            <FontAwesomeIcon
+              icon={faBars}
+              className={styles.menu}
+              onClick={() => {
+                toggleMenu();
+              }}
+            />
+            <div className={styles.iconContainer}>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className={styles.brandIcon}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className={styles.brandIcon}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className={styles.brandIcon}
+              ></FontAwesomeIcon>
+            </div>
+            <div className="desktopContainer">
+              <NavLink to="/aboutus" className={styles.navLink}>
+                About Us
+              </NavLink>
+              <NavLink to="/shop" className={styles.navLink}>
+                Shop
+              </NavLink>
+            </div>
+          </div>
           <NavLink to="/" className={styles.logo}>
             BB.
           </NavLink>
-          <div className={styles.bagContainer}>
+          <div className={styles.rightSide}>
+            <div className="emptyDiv"></div>
             <FontAwesomeIcon
               icon={faBagShopping}
               className={styles.bag}

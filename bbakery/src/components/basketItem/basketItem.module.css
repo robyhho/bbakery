@@ -105,3 +105,58 @@
     padding: 1.5vw;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .basketModalMain {
+    width: 80%;
+  }
+  .itemName,
+  .priceTag {
+    font-size: 3vw;
+  }
+  .basketMainInt {
+    font-size: 4vw;
+  }
+  .trashCan,
+  .minusIcon,
+  .plusIcon {
+    font-size: 3vw;
+  }
+  .checkoutBasketImage {
+    width: 22vw;
+  }
+
+  .basketBtnContainer {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basketModalMain {
+  }
+  .itemName,
+  .priceTag {
+    font-size: 1.5em;
+  }
+
+  .mutedQuantity {
+    font-size: 1em;
+  }
+
+  .basketMainInt {
+    font-size: 1.5em;
+  }
+  .trashCan,
+  .minusIcon,
+  .plusIcon {
+    font-size: 1.2em;
+    padding: 0.7em;
+  }
+  .checkoutBasketImage {
+    width: 8em;
+    height: 8em;
+  }
+
+  .basketBtnContainer {
+  }
+}

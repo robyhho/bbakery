@@ -51,7 +51,6 @@ const Shop = () => {
         </>
       ) : (
         <>
-          {" "}
           <Navbar></Navbar>
           <div className={styles.shopContainer}>
             <h1 className={styles.shopTitle}>Menu</h1>
