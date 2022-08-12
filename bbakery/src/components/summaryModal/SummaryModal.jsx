@@ -23,6 +23,26 @@ const SummaryModal = () => {
         <h2 className={styles.text}>Delivery</h2>
         <h2 className={styles.checkoutText}>To be confirmed at checkout</h2>
       </div>
+      {cartItems.length > 0 ? (
+        <>
+          <hr />
+          <div className={styles.subContainer}>
+            <h2 className={styles.totalText}>Total</h2>
+            <h2 className={styles.totalText}>{`£${cartItems.reduce(
+              (total, cartItem) => {
+                const item = data.find((i) => i._id === cartItem.id);
+                return total + (item?.price || 0) * cartItem.quantity;
+              },
+              0
+            )}`}</h2>
+          </div>
+          <div className={styles.btnContainer}>
+            <button className={styles.btn}>Proceed to checkout</button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
     </section>
   );
 };

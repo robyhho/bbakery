@@ -73,16 +73,69 @@
 @media screen and (min-width: 1200px) {
   .checkoutContainer {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr, 1fr;
+    justify-content: center;
+    align-items: center;
   }
   .checkoutBasketModal {
+    grid-row-start: 0;
+    grid-row-end: 2;
+  }
+  .checkoutBasketModal,
+  .checkoutSummaryModal,
+  .checkoutPromotionModal {
+    width: 100%;
+    margin: auto;
+  }
+  .checkoutSummaryModal,
+  .checkoutPromotionModal {
+    grid-column-start: 2;
+  }
+}
+/* 
+@media screen and (min-width: 1200px) {
+  .checkoutContainer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5% 5%;
+    grid-template-areas:
+      "basket summary"
+      "basket summary"
+      "basket summary"
+      "basket promo"
+      "basket promo";
+    padding: 5em 20%;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .checkoutPromotionModal,
+  .checkoutSummaryModal,
+  .checkoutBasketModal {
+    margin: 0;
+  }
+
+  .checkoutBasketModal {
+    grid-area: basket;
     width: 30vw;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
   }
   .checkoutPromotionModal,
   .checkoutSummaryModal {
-    width: 20vw;
+    width: 100%;
+  }
+
+  .checkoutSummaryModal {
+    grid-area: summary;
+    height: fit-content;
   }
   .checkoutPromotionModal {
-    grid-column-start: 1;
+    grid-area: promo;
   }
-}
+} */

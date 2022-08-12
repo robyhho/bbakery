@@ -135,3 +135,33 @@
     margin: 1vw 2vw;
   }
 }
+
+@media screen and (min-width: 1100px) {
+  .shopItemSquare,
+  .shopBottomContainer {
+    width: 15em;
+    min-height: 1em;
+  }
+  .shopItemSquare {
+    height: 15em;
+  }
+
+  .shopItemTitle {
+    font-size: 1.7em;
+  }
+
+  .shopItemPrice {
+    font-size: 1.5em;
+  }
+
+  .shopMinus,
+  .shopPlus {
+    margin: 1em 2em;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .itemNum {
+    font-size: 2em;
+  }
+}

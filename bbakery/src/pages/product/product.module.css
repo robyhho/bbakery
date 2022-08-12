@@ -1,5 +1,11 @@
 /* Product Styles */
 .productContainer {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,6 +13,7 @@
   background-color: white;
   height: calc(100vh - 70px);
   margin-top: 70px;
+  width: 90vw;
 }
 
 .productImage {
@@ -31,5 +38,11 @@
 
 @media screen and (min-width: 1000px) {
   .productContainer {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .productText {
+    width: 600px;
   }
 }

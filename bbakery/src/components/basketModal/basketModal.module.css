@@ -8,7 +8,6 @@
   padding: 0 1em 1em 1em;
   border-radius: 5px;
   margin-top: 1em;
-  max-width: 100%;
 }
 
 .basketModalTop {
@@ -18,7 +17,6 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--main-font-gray);
-
   padding-bottom: 1em;
 }
 
