@@ -7,6 +7,7 @@
   top: 0;
   width: 100vw;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .navContainer {
@@ -110,21 +111,30 @@
   justify-self: flex-end;
 }
 
+.topIconContainer {
+  display: none;
+}
+
 /* Social media container styles */
-.iconContainer {
+
+.social h2 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.iconContainer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-right: 0.5px solid var(--main-font-gray);
   justify-self: flex-start;
-  display: none;
+  list-style: none;
 }
 
 .brandIcon {
   color: white;
-  height: 20px;
   padding: 0.5em 0.5em;
+  height: 1.5em;
 }
 
 /* Hover styles */
@@ -134,6 +144,11 @@
 .navLink:hover {
   cursor: pointer;
   color: white;
+}
+
+.link:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .brandIcon:hover {
@@ -160,9 +175,9 @@
   .menu {
     display: none;
   }
-
-  .iconContainer {
+  .topIconContainer {
     display: flex;
+    border-right: 0.5px solid var(--main-font-gray);
   }
   .navLink {
     display: inline-block;

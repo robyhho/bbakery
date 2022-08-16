@@ -41,12 +41,30 @@ hr {
 }
 
 .btn {
-  padding: 0.8em 1em;
-  font-size: 1em;
-  background-color: var(--dark-green);
-  border: none;
-  color: #3f3f3f;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
-  text-decoration: none;
+  display: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  color: #f8f8f8;
+  transition: transform 250ms linear;
+}
+@media screen and (min-width: 1000px) {
+  .text {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    display: block;
+    margin: 1em;
+    padding: 0.8em 1em;
+    font-size: 1.4em;
+    background-color: var(--dark-green);
+    border: none;
+    color: #3f3f3f;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
+    text-decoration: none;
+  }
 }

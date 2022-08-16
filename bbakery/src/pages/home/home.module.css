@@ -41,7 +41,7 @@
 .homeBtn:hover {
   transform: scale(1.05);
   transition: transform 250ms linear;
-  box-shadow: 0 0 10px var(--accent-pink);
+  box-shadow: 0 0 2px #f8f8f8;
   cursor: pointer;
 }
 

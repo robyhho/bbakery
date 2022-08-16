@@ -85,10 +85,9 @@ footer section ul li:hover {
 }
 
 .newsletter button:hover {
+  cursor: pointer;
   transform: scale(1.05);
   transition: transform 250ms linear;
-  box-shadow: 0 0 10px var(--accent-pink);
-  cursor: pointer;
 }
 
 @media screen and (min-width: 750px) {

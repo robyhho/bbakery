@@ -27,13 +27,14 @@ const Checkout = () => {
             <section className={styles.checkoutBasketModal}>
               <BasketModal></BasketModal>
             </section>
-
-            <section className={styles.checkoutSummaryModal}>
-              <SummaryModal></SummaryModal>
-            </section>
-            <section className={styles.checkoutPromotionModal}>
-              <CheckoutPromotion></CheckoutPromotion>
-            </section>
+            <div className="rightSection">
+              <section className={styles.checkoutSummaryModal}>
+                <SummaryModal></SummaryModal>
+              </section>
+              <section className={styles.checkoutPromotionModal}>
+                <CheckoutPromotion></CheckoutPromotion>
+              </section>
+            </div>
             {cartItems.length > 0 ? (
               <section className={styles.checkoutButtonModal}>
                 <>

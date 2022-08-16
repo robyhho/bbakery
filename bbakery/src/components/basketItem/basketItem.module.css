@@ -85,7 +85,7 @@
 .trashCan:hover {
   cursor: pointer;
   transform: scale(1.05);
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(67, 67, 67, 0.02);
 }
 
 @media screen and (min-width: 500px) {
@@ -106,37 +106,35 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 750px) {
+  .itemName,
+  .priceTag {
+    font-size: 3vw;
+  }
+
+  .basketMainInt {
+    font-size: 4vw;
+  }
+
+  .checkoutBasketImage {
+    width: 10em;
+    height: 10em;
+  }
+  .trashCan,
+  .minusIcon,
+  .plusIcon {
+    font-size: 2.2vw;
+    padding: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .basketModalMain {
     width: 80%;
   }
   .itemName,
   .priceTag {
-    font-size: 3vw;
-  }
-  .basketMainInt {
-    font-size: 4vw;
-  }
-  .trashCan,
-  .minusIcon,
-  .plusIcon {
-    font-size: 3vw;
-  }
-  .checkoutBasketImage {
-    width: 22vw;
-  }
-
-  .basketBtnContainer {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .basketModalMain {
-  }
-  .itemName,
-  .priceTag {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .mutedQuantity {
@@ -149,14 +147,15 @@
   .trashCan,
   .minusIcon,
   .plusIcon {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0.7em;
   }
   .checkoutBasketImage {
-    width: 8em;
-    height: 8em;
+    width: 5em;
+    height: 6em;
   }
 
   .basketBtnContainer {
+    width: 50%;
   }
 }

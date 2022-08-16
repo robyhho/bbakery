@@ -23,6 +23,10 @@
   padding: 0.1em;
 }
 
+.shopItemSquare:hover {
+  cursor: pointer;
+}
+
 .shopItemTitle,
 .shopItemPrice {
   color: var(--main-font-gray);
@@ -81,6 +85,13 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
 }
 
+.shopMinus:hover,
+.shopPlus:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgba(67, 67, 67, 0.02);
+}
+
 @media screen and (min-width: 700px) and (max-width: 1099px) {
   .shopItemSquare {
     width: 35vw;
@@ -132,6 +143,7 @@
 
   .shopMinus,
   .shopPlus {
+    padding: 0.5em;
     margin: 1vw 2vw;
   }
 }
@@ -147,17 +159,17 @@
   }
 
   .shopItemTitle {
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
 
   .shopItemPrice {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .shopMinus,
   .shopPlus {
     margin: 1em 2em;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1em;
   }
 

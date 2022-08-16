@@ -39,7 +39,7 @@ const Navbar = () => {
                 toggleMenu();
               }}
             />
-            <div className={styles.iconContainer}>
+            <div className={styles.topIconContainer}>
               <FontAwesomeIcon
                 icon={faInstagram}
                 className={styles.brandIcon}

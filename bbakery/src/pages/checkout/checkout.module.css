@@ -24,6 +24,10 @@
   margin-top: 1em;
 }
 
+.checkoutPromotionModal {
+  margin-top: 1em;
+}
+
 .checkoutButtonModal {
   display: flex;
   align-items: center;
@@ -49,9 +53,9 @@
 }
 
 .button:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
   transition: transform 250ms linear;
-  box-shadow: 0 0 10px var(--accent-pink);
+  box-shadow: 0 0 2px #f8f8f8;
   cursor: pointer;
 }
 
@@ -69,28 +73,43 @@
     width: 80vw;
   }
 }
+@media screen and (min-width: 750px) {
+  .checkoutBasketModal,
+  .checkoutPromotionModal,
+  .checkoutSummaryModal {
+    width: 70vw;
+  }
+  .button {
+    width: 70vw;
+  }
+}
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .checkoutContainer {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr, 1fr;
+    width: 100vw;
+    overflow: hidden;
+    grid-template-columns: 50vw 30vw;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
-  .checkoutBasketModal {
-    grid-row-start: 0;
-    grid-row-end: 2;
-  }
+
   .checkoutBasketModal,
   .checkoutSummaryModal,
   .checkoutPromotionModal {
     width: 100%;
-    margin: auto;
+
+    margin-top: 2em;
+    align-items: flex-start;
   }
   .checkoutSummaryModal,
   .checkoutPromotionModal {
     grid-column-start: 2;
+  }
+
+  .button {
+    display: none;
   }
 }
 /* 

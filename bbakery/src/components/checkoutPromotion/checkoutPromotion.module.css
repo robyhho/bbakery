@@ -34,3 +34,9 @@
   border-bottom-right-radius: 5px;
   font-weight: lighter;
 }
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #f8f8f8;
+  transition: transform 250ms linear;
+}

@@ -13,11 +13,15 @@ const ShopItem = ({ _id, name, price, photos }) => {
   const quantity = getItemQuantity(_id);
   return (
     <>
-      <section
-        className={styles.shopItemContainer}
-        onClick={quantity === 0 ? () => increaseCartQuantity(_id) : undefined}
-      >
-        {<img src={photos} alt="" className={styles.shopItemSquare} />}
+      <section className={styles.shopItemContainer}>
+        {
+          <img
+            src={photos}
+            alt={`Image of ${name}`}
+            className={styles.shopItemSquare}
+            onClick={() => increaseCartQuantity(_id)}
+          />
+        }
 
         <div className={styles.shopBottomContainer}>
           <h2 className={styles.shopItemTitle}>{name}</h2>
