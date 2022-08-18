@@ -25,9 +25,10 @@
 }
 
 .aboutPara:last-child {
-  padding-bottom: 2em;
+  padding-bottom: 10em;
 }
 
+/*Mobile screens*/
 @media screen and (min-width: 550px) {
   .aboutImage {
     width: 70vw;
@@ -44,7 +45,7 @@
     padding: 0.3em;
   }
   .aboutContainer {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 5em;
   }
 
@@ -52,6 +53,19 @@
     width: 600px;
   }
   .aboutPara {
-    width: 650px;
+    width: 600px;
+  }
+  .aboutPara:last-child {
+    padding-bottom: 10%;
+  }
+}
+/* Tall tablets */
+@media screen and (min-width: 900px) and (min-height: 1200px) {
+  .aboutContainer {
+    padding-top: 15%;
+    padding-bottom: 15vh;
+  }
+  .aboutPara:last-child {
+    padding-bottom: 15%;
   }
 }
