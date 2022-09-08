@@ -15,7 +15,8 @@ const Product = () => {
         "hello"
       ) : (
         <>
-          <div className="pageContainer">
+          <Navbar></Navbar>
+          <div className={styles.pageContainer}>
             <div className={styles.productContainer}>
               {!loading && data.photos !== undefined && (
                 <img

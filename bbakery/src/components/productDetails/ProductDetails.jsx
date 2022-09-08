@@ -30,7 +30,9 @@ const NutritionInfo = ({ data, setShowNutrition }) => {
   return (
     <>
       <div className={styles.productDetailsTitleContainer}>
-        <h2 onClick={handleClick}>Dietary Info</h2>
+        <h2 onClick={handleClick} className={styles.inactive}>
+          Dietary Info
+        </h2>
         <h2 className={styles.pdActive}>Nutrition</h2>
       </div>
 
@@ -93,7 +95,9 @@ const DietaryInfo = ({ data, setShowNutrition }) => {
     <>
       <div className={styles.productDetailsTitleContainer}>
         <h2 className={styles.pdActive}>Dietary Info</h2>
-        <h2 onClick={handleClick}>Nutrition</h2>
+        <h2 onClick={handleClick} className={styles.inactive}>
+          Nutrition
+        </h2>
       </div>
       <div className={styles.pdTextContainer}>
         <p className={styles.pdDetailText}>Energy:</p>

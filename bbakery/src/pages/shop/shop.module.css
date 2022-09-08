@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   padding-top: 60px;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .shopTitle {
@@ -119,6 +121,7 @@
   .shopItemsContainer {
     display: flex;
   }
+
   .shopTitle {
     font-size: 2.5em;
     padding-top: 1em;

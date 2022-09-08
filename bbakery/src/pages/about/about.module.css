@@ -53,7 +53,8 @@
     width: 600px;
   }
   .aboutPara {
-    width: 600px;
+    font-size: 0.9em;
+    width: 500px;
   }
   .aboutPara:last-child {
     padding-bottom: 10%;
@@ -65,7 +66,8 @@
     padding-top: 15%;
     padding-bottom: 15vh;
   }
-  .aboutPara:last-child {
-    padding-bottom: 15%;
+
+  .aboutPara {
+    font-size: 1em;
   }
 }
