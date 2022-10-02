@@ -1,9 +1,7 @@
 :root {
-  --dark-green: #d1d6ca;
+  --light-brown: #e5dbce;
   --main-font-gray: #6d6a75;
-  --light-green: #e6ebe0;
-  --light-blue: #acc5d3;
-  --accent-pink: #e5989b;
+  --accent-orange: #ffa07b;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");

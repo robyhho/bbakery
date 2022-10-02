@@ -30,9 +30,9 @@
 .homeBtn {
   padding: 1em 2em;
   font-size: 5vw;
-  background-color: var(--dark-green);
+  background-color: var(--accent-orange);
   border: none;
-  color: #3f3f3f;
+  color: white;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-decoration: none;
@@ -64,7 +64,7 @@
 
 @media screen and (min-width: 770px) {
   .topContainer {
-    background-image: url(../../images/homeDesk.jpg);
+    background-image: url(../../images/homedesktopImg1.jpg);
     margin-top: 50px;
   }
 
@@ -83,8 +83,9 @@
 
 @media screen and (min-width: 1200px) {
   .topContainer {
-    background-image: url(../../images/homeDesk.jpg);
+    background-image: url(../../images/homedesktopImg1.jpg);
     margin-top: 50px;
+    background-position: ;
   }
 
   .homeTitle {

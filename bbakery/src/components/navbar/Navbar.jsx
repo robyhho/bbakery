@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
           </div>
           <NavLink to="/" className={styles.logo}>
-            BB.
+            Dantat
           </NavLink>
           <div className={styles.rightSide}>
             <div className="emptyDiv"></div>

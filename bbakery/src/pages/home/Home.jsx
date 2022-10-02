@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Navbar></Navbar>
       <div className={styles.topContainer}>
-        <h1 className={styles.homeTitle}>Welcome to Betty's Bakery</h1>
+        <h1 className={styles.homeTitle}>Welcome to Dantat</h1>
         <section className={styles.homeBtnSection}>
           <NavLink to="/shop" className={styles.homeBtn}>
             Shop Now

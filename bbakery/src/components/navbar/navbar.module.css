@@ -1,6 +1,6 @@
 .navbar {
   height: 50px;
-  background-color: var(--dark-green);
+  background-color: var(--light-brown);
   display: flex;
   justify-content: center;
   position: fixed;
@@ -17,11 +17,12 @@
 }
 
 .menu,
-.bag,
 .logo {
-  color: #6d6a75;
+  color: var(--accent-orange);
 }
-
+.bag {
+  color: var(--main-font-gray);
+}
 .menu,
 .bag {
   padding: 5px 30px;
