@@ -54,6 +54,9 @@ const Navbar = () => {
               ></FontAwesomeIcon>
             </div>
             <div className="desktopContainer">
+              <NavLink to="/" className={styles.navLink}>
+                Home
+              </NavLink>
               <NavLink to="/aboutus" className={styles.navLink}>
                 About Us
               </NavLink>
