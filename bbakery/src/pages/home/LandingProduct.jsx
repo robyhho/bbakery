@@ -3,7 +3,7 @@ import Featured from "../../components/featured/Featured";
 
 const LandingProduct = () => {
   return (
-    <div>
+    <div className={styles.landingContainer}>
       <h1 className={styles.featuredTitle}>Our Featured Products</h1>
       <Featured></Featured>
     </div>

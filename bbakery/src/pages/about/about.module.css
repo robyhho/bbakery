@@ -71,3 +71,9 @@
     font-size: 1em;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .aboutContainer {
+    flex-direction: row;
+  }
+}

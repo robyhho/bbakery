@@ -4,12 +4,16 @@
 }
 
 .findSpan {
-  color: #97969a;
+  color: var(--accent-orange);
 }
 
 .image:hover,
 .findSpan:hover {
   cursor: pointer;
+}
+.image:hover,
+.findSpan:hover {
+  opacity: 0.6;
 }
 
 .image {
@@ -22,7 +26,7 @@
 @media screen and (min-width: 750px) {
   .productTitle {
     font-size: 1.3em;
-    height: 3em;
+    height: 2em;
   }
   .findSpan {
     font-size: 1.1em;
