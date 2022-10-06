@@ -1,23 +1,36 @@
+main {
+  padding-top: 100px;
+  background-color: var(--accent-orange);
+}
+
 .shopContainer {
   position: relative;
-  background-color: var(--light-blue);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 60px;
-  width: 100vw;
+  width: 90vw;
+  border-radius: 5px;
+  margin: auto;
   overflow: hidden;
 }
 
 .shopTitle {
   font-size: 2em;
   padding: 0;
+  font-weight: 700;
 }
 
 .shopSubtotal {
   color: var(--main-font-gray);
   font-weight: 300;
+}
+
+.shopPrice {
+  color: var(--accent-orange);
+  font-weight: 700;
 }
 
 .shopItemsContainer {
@@ -38,22 +51,21 @@
 
 .viewBtn {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 90%;
   padding: 0.5em;
-  background-color: var(--dark-green);
+  background-color: var(--accent-orange);
   border: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
-  color: var(--main-font-gray);
+  color: white;
   font-size: 1.2em;
 }
 
 .viewBtn:hover {
   transform: scale(1.01);
   transition: transform 250ms linear;
-  box-shadow: 0 0 10px var(--accent-pink);
+  box-shadow: 0 0 10px var(--accent-orange);
   cursor: pointer;
 }
 
@@ -113,9 +125,8 @@
 
 @media screen and (min-width: 1000px) {
   .shopContainer {
-    height: 100vh;
     justify-content: flex-start;
-    padding: 2em;
+    padding: 3em;
   }
 
   .shopItemsContainer {
@@ -124,9 +135,14 @@
 
   .shopTitle {
     font-size: 2.5em;
-    padding-top: 1em;
   }
   .shopSubtotal {
     font-size: 1.5em;
+  }
+
+  .viewBtn {
+    width: 30%;
+    margin-bottom: 2em;
+    padding: 0.7em;
   }
 }

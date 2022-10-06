@@ -26,58 +26,62 @@ const Shop = () => {
       {loading == true ? (
         <>
           <Navbar></Navbar>
-          <div className={styles.shopContainer}>
-            <h1 className={styles.shopTitle}>
-              <div className="skeleton skeletonTitle"></div>
-            </h1>
-            <h2 className={styles.shopSubtotal}>
-              <div className="skeleton skeletonTitle"></div>
-            </h2>
-            <div className={styles.shopItemsContainer}>
-              <SkeletonShopItem></SkeletonShopItem>
-              <SkeletonShopItem></SkeletonShopItem>
-              <SkeletonShopItem></SkeletonShopItem>
-              <SkeletonShopItem></SkeletonShopItem>
-              <SkeletonShopItem></SkeletonShopItem>
-              <SkeletonShopItem></SkeletonShopItem>
+          <main>
+            <div className={styles.shopContainer}>
+              <h1 className={styles.shopTitle}>
+                <div className="skeleton skeletonTitle"></div>
+              </h1>
+              <h2 className={styles.shopSubtotal}>
+                <div className="skeleton skeletonTitle"></div>
+              </h2>
+              <div className={styles.shopItemsContainer}>
+                <SkeletonShopItem></SkeletonShopItem>
+                <SkeletonShopItem></SkeletonShopItem>
+                <SkeletonShopItem></SkeletonShopItem>
+                <SkeletonShopItem></SkeletonShopItem>
+                <SkeletonShopItem></SkeletonShopItem>
+                <SkeletonShopItem></SkeletonShopItem>
+              </div>
+              <div className={styles.viewBtnContainer}>
+                <button className={styles.viewBtn}>
+                  <p className="skeleton skeletonText"></p>
+                </button>
+              </div>
             </div>
-            <div className={styles.viewBtnContainer}>
-              <button className={styles.viewBtn}>
-                <p className="skeleton skeletonText"></p>
-              </button>
-            </div>
-          </div>
-          <Footer></Footer>
+            <Footer></Footer>
+          </main>
         </>
       ) : (
         <>
           <Navbar></Navbar>
-          <div className={styles.shopContainer}>
-            <h1 className={styles.shopTitle}>Menu</h1>
-            <h2
-              className={styles.shopSubtotal}
-            >{`Subtotal: ${basketTotal}`}</h2>
-            <div className={styles.shopItemsContainer}>
-              {data.map((item) => (
-                <ShopItem {...item} key={item._id}></ShopItem>
-              ))}
+          <main>
+            <div className={styles.shopContainer}>
+              <h1 className={styles.shopTitle}>Menu</h1>
+              <h2 className={styles.shopSubtotal}>
+                Subtotal:{" "}
+                <span className={styles.shopPrice}>{`${basketTotal}`}</span>
+              </h2>
+              <div className={styles.shopItemsContainer}>
+                {data.map((item) => (
+                  <ShopItem {...item} key={item._id}></ShopItem>
+                ))}
+              </div>
+              <div className={styles.viewBtnContainer}>
+                <button
+                  className={styles.viewBtn}
+                  onClick={() => {
+                    handleClick();
+                  }}
+                >
+                  <p>
+                    {cartQuantity > 0
+                      ? `View Order (${cartQuantity})`
+                      : "Basket currently empty"}
+                  </p>
+                </button>
+              </div>
             </div>
-            <div className={styles.viewBtnContainer}>
-              <button
-                className={styles.viewBtn}
-                onClick={() => {
-                  handleClick();
-                }}
-              >
-                <p>
-                  {cartQuantity > 0
-                    ? `View Order (${cartQuantity})`
-                    : "Basket currently empty"}
-                </p>
-                <p>{}</p>
-              </button>
-            </div>
-          </div>
+          </main>
           <Footer></Footer>
         </>
       )}

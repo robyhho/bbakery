@@ -3,6 +3,7 @@ import Featured from "../../components/featured/Featured";
 import Square from "../../components/accents/square/Square";
 import Triangles from "../../components/accents/triangles/Triangles";
 import DiagonalLines from "../../components/accents/diagonalLines/DiagonalLines";
+
 const LandingProduct = () => {
   return (
     <div className={styles.landingContainer}>

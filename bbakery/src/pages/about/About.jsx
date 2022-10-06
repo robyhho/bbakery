@@ -1,7 +1,7 @@
 import styles from "./about.module.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-
+import Zigzag from "../../components/accents/zigzag/Zigzag";
 const About = () => {
   return (
     <>
@@ -12,7 +12,9 @@ const About = () => {
           alt="Woman preparing pineapple buns"
           className={styles.aboutImage}
         />
+
         <div className={styles.textContainer}>
+          <Zigzag></Zigzag>
           <h1 className={styles.aboutTitle}>About Us</h1>
           <p className={styles.aboutPara}>
             Nice to meet you! I’m Betty, the cook behind Betty’s bakery. Being

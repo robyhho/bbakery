@@ -1,0 +1,42 @@
+.zigContainer {
+  position: absolute;
+  left: 45%;
+  display: none;
+  opacity: 0.5;
+}
+
+.zig1 {
+  margin-left: 100px;
+  height: 50px;
+  width: 150px;
+  background: linear-gradient(45deg, white 35%, transparent 25%),
+    linear-gradient(135deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(225deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(315deg, white 35%, transparent 25%);
+  background-size: 50px;
+  background-color: var(--accent-orange);
+  z-index: 2;
+}
+
+.zig2 {
+  height: 50px;
+  width: 250px;
+  background: linear-gradient(45deg, white 35%, transparent 25%),
+    linear-gradient(135deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(225deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(315deg, white 35%, transparent 25%);
+  background-size: 50px;
+  background-color: var(--light-brown);
+}
+
+@media screen and (min-width: 1770px) {
+  .zigContainer {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 2070px) {
+  .zigContainer {
+    left: 50%;
+  }
+}
