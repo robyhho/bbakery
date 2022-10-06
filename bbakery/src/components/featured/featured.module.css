@@ -1,4 +1,5 @@
 .productContainer {
+  position: relative;
   padding: 3em;
   height: 100%;
   background-color: var(--light-green);
@@ -8,6 +9,7 @@
   align-items: center;
   gap: 3em;
   text-align: center;
+  z-index: 1;
 }
 
 .product {
@@ -17,7 +19,7 @@
 @media screen and (min-width: 750px) {
   .productContainer {
     flex-direction: row;
-    gap: 2em;
+    gap: 5em;
     align-items: flex-end;
   }
 }

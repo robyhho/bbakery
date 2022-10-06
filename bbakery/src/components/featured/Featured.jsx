@@ -3,7 +3,7 @@ import FeaturedProduct from "../featuredProduct/FeaturedProduct";
 import useFetch from "../../hooks/useFetch";
 
 const Featured = () => {
-  const { data, loading, error } = useFetch("/products/find/?featured=true");
+  const { data, loading } = useFetch("/products/find/?featured=true");
 
   return (
     <div className={styles.productContainer}>

@@ -1,8 +1,11 @@
 .landingContainer {
+  position: relative;
   border-top: 5px solid var(--light-brown);
+  padding: 3em 0;
+  background-color: #f8f8f8;
 }
 
 .featuredTitle {
   background-color: var(--light-green);
-  padding: 2em 0 0 0;
+  padding: 1.5em 0 2.5em 0;
 }
