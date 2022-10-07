@@ -1,30 +1,39 @@
 .contactContainer {
-  background-color: var(--light-blue);
-  height: calc(100vh - 50px);
+  background-color: var(--accent-orange);
+  height: fit-content;
+  min-height: 80vh;
   margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: 1.5em;
+  width: 90%;
 }
 
 .title {
-  padding: 1em;
+  padding: 0.5em;
+  font-weight: 700;
 }
 
 .subTitle {
   text-align: center;
   color: var(--main-font-gray);
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .label {
   padding-bottom: 0.6em;
+  font-weight: 700;
 }
 
 .inputContainer {
@@ -35,23 +44,71 @@
   width: 100%;
 }
 
-.input {
+.input,
+.message {
   width: 100%;
-  height: 3em;
   border-radius: 5px;
   border: none;
 }
+.input {
+  height: 3em;
+}
 
 .message {
-  height: 9em;
+  text-align: start;
+  padding: 0.5em;
 }
 
 .submit {
   width: 50%;
   margin: auto;
-  background-color: var(--dark-green);
+  background-color: var(--light-brown);
   border: none;
   border-radius: 5px;
   height: 3em;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+  color: var(--main-font-gray);
+  font-size: 1.1em;
+}
+
+@media screen and (max-height: 690px) {
+  .contactContainer {
+    padding-top: 30px;
+    height: fit-content;
+  }
+  .title {
+    padding: 0;
+  }
+  .subTitle {
+    font-size: 0.8em;
+  }
+  .form {
+    gap: 1em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .form {
+    width: 50%;
+  }
+  .submit {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .submit {
+    width: 30%;
+  }
 }

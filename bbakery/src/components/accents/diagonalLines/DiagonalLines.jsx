@@ -3,7 +3,7 @@ import styles from "./diagonalLines.module.css";
 const DiagonalLines = () => {
   return (
     <>
-      <div class={styles.bgLines}></div>
+      <div className={styles.bgLines}></div>
     </>
   );
 };

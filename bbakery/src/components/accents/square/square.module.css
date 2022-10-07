@@ -8,3 +8,9 @@
   border: 40px solid var(--light-brown);
   transform: rotate(45deg);
 }
+
+@media screen and (max-width: 970px) {
+  .square {
+    display: none;
+  }
+}

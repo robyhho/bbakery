@@ -2,6 +2,10 @@ import React from "react";
 import styles from "./contact.module.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import Circle from "../../components/accents/circle/Circle";
+import SemiCircle from "../../components/accents/semiCircle/SemiCircle";
+import TriangleLine from "../../components/accents/triangleLine/TriangleLine";
+
 const Contact = () => {
   return (
     <>
@@ -35,16 +39,26 @@ const Contact = () => {
             <label htmlFor="" className={styles.label}>
               Message:
             </label>
-            <input
+            {/* <input
               type="textarea"
               className={`${styles.input} ${styles.message}`}
-            />
+            /> */}
+            <textarea
+              rows="4"
+              cols="50"
+              className={` ${styles.message}`}
+            ></textarea>
           </div>
           <button type="submit" className={styles.submit}>
             Send
           </button>
         </form>
       </div>
+      {/* Background Accents */}
+      <TriangleLine></TriangleLine>
+      <SemiCircle></SemiCircle>
+      <Circle></Circle>
+      {/*  */}
       <Footer></Footer>
     </>
   );

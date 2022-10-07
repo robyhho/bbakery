@@ -22,3 +22,9 @@
   border-right: 25px solid transparent;
   border-bottom: 50px solid var(--light-brown);
 }
+
+@media screen and (max-width: 1360px) {
+  .triangleContainer {
+    display: none;
+  }
+}

@@ -20,6 +20,7 @@
 .logo {
   color: var(--accent-orange);
 }
+
 .bag {
   color: var(--main-font-gray);
 }
@@ -48,10 +49,10 @@
 
 .itemNum {
   position: absolute;
-  top: 0px;
-  right: 14px;
+  top: 7px;
+  right: 18px;
   color: var(--main-font-gray);
-  background-color: var(--accent-pink);
+  background-color: var(--accent-orange);
   border-radius: 10000px;
   width: 20px;
   font-weight: bolder;
@@ -152,7 +153,7 @@
 }
 
 .brandIcon:hover {
-  color: var(--main-font-gray);
+  color: var(--accent-orange);
   cursor: pointer;
 }
 
