@@ -2,9 +2,6 @@ import React from "react";
 import styles from "./contact.module.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Circle from "../../components/accents/circle/Circle";
-import SemiCircle from "../../components/accents/semiCircle/SemiCircle";
-import TriangleLine from "../../components/accents/triangleLine/TriangleLine";
 
 const Contact = () => {
   return (
@@ -55,10 +52,12 @@ const Contact = () => {
         </form>
       </div>
       {/* Background Accents */}
-      <TriangleLine></TriangleLine>
-      <SemiCircle></SemiCircle>
-      <Circle></Circle>
-      {/*  */}
+      <img
+        src="../../images/svgs/contactSvg.svg"
+        className={styles.contactSvg}
+        alt="Brown Semicircle for background styling"
+      ></img>
+      {/*   */}
       <Footer></Footer>
     </>
   );

@@ -54,7 +54,11 @@
   color: var(--main-font-gray);
   background-color: var(--accent-orange);
   border-radius: 10000px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bolder;
   text-align: center;
 }

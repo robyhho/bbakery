@@ -3,7 +3,7 @@
   height: fit-content;
   min-height: 80vh;
   margin-top: 50px;
-  padding-top: 20px;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,6 +69,13 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
   color: var(--main-font-gray);
   font-size: 1.1em;
+}
+
+.contactSvg {
+  position: absolute;
+  right: 12%;
+  top: calc(100vh - (100vh - 100px));
+  height: 250px;
 }
 
 @media screen and (max-height: 690px) {

@@ -33,6 +33,7 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   font-weight: lighter;
+  color: white;
 }
 .button:hover {
   cursor: pointer;

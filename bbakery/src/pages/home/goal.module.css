@@ -16,6 +16,9 @@
   font-weight: 300;
   padding-bottom: 1em;
   color: var(--main-font-gray);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
 }
 
 .goalPara {
@@ -50,9 +53,6 @@
     margin-top: 3em;
     font-size: 2em;
     margin-left: 5em;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.15em;
   }
 
   .goalPara {
