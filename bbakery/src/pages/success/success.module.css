@@ -1,7 +1,45 @@
 .logo {
-  font-size: 5em;
+  color: var(--accent-orange);
+  font-weight: 700;
+  padding: 1em 1em 0.5em 1em;
 }
 
 .main {
+  padding: 0;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text {
+  font-weight: 300;
+  align-self: flex-start;
+  font-size: 1.2em;
+  padding-left: 1em;
+}
+
+/* Order Meta Styles */
+
+.orderMeta {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5em 0;
+  margin: 0.5em;
+  border-top: 0.5px solid var(--main-font-gray);
+  border-bottom: 0.5px solid var(--main-font-gray);
+}
+
+.detailTitle {
+  color: var(--accent-orange);
+}
+
+/* Shop Item styles */
+
+.orderItems {
+  display: flex;
+  flex-direction: row;
 }
