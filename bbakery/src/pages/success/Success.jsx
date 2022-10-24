@@ -1,5 +1,5 @@
-import React from "react";
 import styles from "./success.module.css";
+
 const Success = () => {
   return (
     <>
@@ -30,16 +30,30 @@ const Success = () => {
         </section>
         <section className={styles.orderItems}>
           <div className={styles.item}>
-            <img src="" alt="" />
-            <h2 className={styles.itemName}></h2>
-            <h2 className={styles.itemQty}></h2>
-            <h2 className={styles.itemTotal}></h2>
+            <img src="" alt="Image of the item" className={styles.itemImg} />
+            <p className={styles.itemName}>Char Siu Bao</p>
+            <p className={styles.itemQty}>Qty 5</p>
+            <p className={styles.itemPrice}>£10.70</p>
           </div>
           <div className={styles.item}>
-            <img src="" alt="" />
-            <h2 className={styles.itemName}></h2>
-            <h2 className={styles.itemQty}></h2>
-            <h2 className={styles.itemTotal}></h2>
+            <img src="" alt="Image of the item" className={styles.itemImg} />
+            <p className={styles.itemName}>Egg Tart</p>
+            <p className={styles.itemQty}>Qty 5</p>
+            <p className={styles.itemPrice}>£10.70</p>
+          </div>
+        </section>
+        <section className={styles.costSection}>
+          <div className={styles.subtotal}>
+            <p className={styles.costSectionTitle}>Subtotal</p>
+            <p className={styles.costSectionPrice}>£21.40</p>
+          </div>
+          <div className={styles.shipping}>
+            <p className={styles.costSectionTitle}>Shipping</p>
+            <p className={styles.costSectionPrice}>£21.40</p>
+          </div>
+          <div className={styles.discounts}>
+            <p className={styles.costSectionTitle}>Discounts</p>
+            <p className={styles.costSectionPrice}>£21.40</p>
           </div>
         </section>
       </main>
