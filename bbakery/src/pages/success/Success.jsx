@@ -49,13 +49,25 @@ const Success = () => {
           </div>
           <div className={styles.shipping}>
             <p className={styles.costSectionTitle}>Shipping</p>
-            <p className={styles.costSectionPrice}>£21.40</p>
+            <p className={styles.costSectionPrice}>£1.90</p>
           </div>
           <div className={styles.discounts}>
             <p className={styles.costSectionTitle}>Discounts</p>
-            <p className={styles.costSectionPrice}>£21.40</p>
+            <p className={styles.costSectionPrice}>-20% (£5.00)</p>
           </div>
         </section>
+        <section className={styles.total}>
+          <p className={styles.total}>Total</p>
+          <p className={styles.totalPrice}>£23.30</p>
+        </section>
+        <div className={styles.closingSection}>
+          <p className={styles.closingText}>
+            We’ll send you a shipping confirmation when your item's are on the
+            way! We appreciate your businness, and hope you enoy your purchase
+          </p>
+          <p className={styles.closingText}>Thank You!</p>
+          <p className={styles.closingLogo}>Dantat</p>
+        </div>
       </main>
     </>
   );
