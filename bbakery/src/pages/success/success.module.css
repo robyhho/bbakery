@@ -123,3 +123,36 @@
   color: var(--accent-orange);
   padding-top: 1em;
 }
+
+@media screen and (max-width: 380px) {
+  .text {
+    font-size: 0.9em;
+  }
+
+  .orderMeta {
+    font-size: 0.6em;
+  }
+
+  .orderItems {
+    font-size: 0.6em;
+  }
+
+  .costSection {
+    font-size: 0.7em;
+    padding: 0;
+  }
+
+  .subtotal,
+  .shipping,
+  .discounts {
+    padding: 0.7em;
+  }
+  .total {
+    font-size: 1.2em;
+    padding: 0.3em;
+  }
+  .closingSection {
+    padding-top: 0;
+    font-size: 0.6em;
+  }
+}

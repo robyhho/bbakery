@@ -9,7 +9,7 @@ import Checkout from "./pages/checkout/Checkout";
 import Contact from "./pages/contact/Contact";
 import Success from "./pages/success/Success";
 import ScrollToTop from "./ScrollToTop";
-
+import Cancel from "./pages/cancel.jsx/Cancel";
 function App() {
   return (
     <ShoppingCartProvider>
@@ -23,6 +23,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/success" element={<Success />}></Route>
+            <Route path="/cancel" element={<Cancel />}></Route>
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

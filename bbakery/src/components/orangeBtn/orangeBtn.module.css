@@ -1,0 +1,10 @@
+.homeBtn {
+  padding: 1em 2em;
+  font-size: 5vw;
+  background-color: var(--accent-orange);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-decoration: none;
+}

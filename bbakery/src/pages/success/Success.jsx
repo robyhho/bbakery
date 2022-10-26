@@ -63,7 +63,7 @@ const Success = () => {
         <div className={styles.closingSection}>
           <p className={styles.closingText}>
             We’ll send you a shipping confirmation when your item's are on the
-            way! We appreciate your businness, and hope you enoy your purchase
+            way! We appreciate your business, and hope you enoy your purchase
           </p>
           <p className={styles.closingText}>Thank You!</p>
           <p className={styles.closingLogo}>Dantat</p>
