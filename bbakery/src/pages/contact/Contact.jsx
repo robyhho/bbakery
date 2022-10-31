@@ -36,10 +36,6 @@ const Contact = () => {
             <label htmlFor="" className={styles.label}>
               Message:
             </label>
-            {/* <input
-              type="textarea"
-              className={`${styles.input} ${styles.message}`}
-            /> */}
             <textarea
               rows="4"
               cols="50"

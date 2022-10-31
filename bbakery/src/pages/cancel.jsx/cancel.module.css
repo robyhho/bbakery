@@ -1,7 +1,72 @@
 .container {
+  position: relative;
+  display: flex;
   height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .title {
-  padding: 0;
+  padding: 10%;
+  font-size: 1.5em;
+}
+
+.btnContainer {
+  position: absolute;
+  padding-top: 60vh;
+  z-index: 2;
+  font-size: 1.8em;
+}
+
+.cancelBg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80%;
+  overflow: hidden;
+}
+
+.bgTriangles {
+  position: absolute;
+  right: 10%;
+}
+
+/* Media Styles */
+
+@media screen and (max-width: 600px) {
+  .bgTriangles {
+    display: none;
+  }
+  .cancelBg {
+    height: 70%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .btnContainer {
+    padding-top: 65vh;
+  }
+  .bgTriangles {
+    display: none;
+  }
+  .cancelBg {
+    height: 75%;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1200px) {
+  .bgTriangles {
+    display: none;
+  }
+
+  .btnContainer {
+    padding-top: 60vh;
+  }
 }

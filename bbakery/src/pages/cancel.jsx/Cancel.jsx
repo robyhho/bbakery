@@ -11,7 +11,19 @@ const Cancel = () => {
             Forgot to add something to your cart? <br />
             Swing by our shop.
           </h1>
-          <OrangeBtn destination={"/shop"}></OrangeBtn>
+          <div className={styles.btnContainer}>
+            <OrangeBtn destination={"/shop"}></OrangeBtn>
+          </div>
+          <img
+            src="../../images/svgs/cancelBg.svg"
+            className={styles.cancelBg}
+            alt="Brown Semicircle"
+          ></img>
+          <img
+            src="../../images/svgs/triangles.svg"
+            alt="Brown Triangles"
+            className={styles.bgTriangles}
+          />
         </main>
       </header>
     </>

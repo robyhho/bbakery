@@ -8,3 +8,21 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-decoration: none;
 }
+
+@media screen and (min-width: 450px) {
+  .homeBtn {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .homeBtn {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .homeBtn {
+    font-size: 0.7em;
+  }
+}
